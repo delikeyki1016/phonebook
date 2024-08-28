@@ -11,7 +11,10 @@ const ContactForm = () => {
         // form submit의 경우 새로고침 방지
         event.preventDefault();
         // 액션은 type(액션명), payload(보내줘야하는 값)를 넘겨줌
-        dispatch({ type: "ADD_CONTACT", payload: { name, phoneNumber } }); //name: name
+        dispatch({
+            type: "ADD_CONTACT",
+            payload: { name, phoneNumber, keyword: "" },
+        }); //name: name
     };
 
     return (

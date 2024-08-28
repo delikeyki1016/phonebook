@@ -10,7 +10,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     // 리덕스 사용순서
     // 1. npm install redux react-redux
-    // 2. redux 폴더 생성 - store.js 생성 / reducer 폴더 생성 - reducer.js 생성(store에서 import)
+    // 2. redux 폴더 생성 - store.js 생성
+    //    reducer 폴더 생성(여러개의 리듀서가 있을 수 있기때문에) - reducer.js 생성(store에서 import)
     <Provider store={store}>
         <App />
     </Provider>
